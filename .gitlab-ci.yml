@@ -1,0 +1,11 @@
+stages: 
+  - deploy
+
+deploy:
+  stage: deploy
+  script: 
+    - echo "Hello, GitLab Runner!"
+  only:
+    - dev
+  tags:
+    - imis
